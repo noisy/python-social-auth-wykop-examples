@@ -9,7 +9,7 @@ mechanism with support for several frameworks and auth providers.
   <img src="example-common/screenshots/screenshot.png" />
 </p>
 
-Those examples shows how to use [python- provider](https://github.com/noisy/python-social-auth-wykop) with couple different python frameworks:
+Those examples shows how to use [python-wykop-provider](https://github.com/noisy/python-social-auth-wykop) with couple different python frameworks:
 
 * [Django](https://www.djangoproject.com/)
 * [Flask](http://flask.pocoo.org/)
