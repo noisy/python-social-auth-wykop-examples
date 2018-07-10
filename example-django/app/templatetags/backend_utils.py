@@ -29,7 +29,7 @@ def backend_class(backend):
 @register.filter
 def order_backends(backends):
     order = {
-        'steemconnect': 0,
+        'wykop': 0,
         'facebook': 1,
         'github': 2,
         'twitter': 3,
@@ -42,19 +42,9 @@ def order_backends(backends):
 @register.filter
 def icon_name(name):
     return {
-        'steemconnect': 'steem',
-        'stackoverflow': 'stack-overflow',
         'google-oauth': 'google',
         'google-oauth2': 'google',
-        'google-openidconnect': 'google',
-        'yahoo-oauth': 'yahoo',
         'facebook-app': 'facebook',
-        'email': 'envelope',
-        'vimeo': 'vimeo-square',
-        'linkedin-oauth2': 'linkedin',
-        'vk-oauth2': 'vk',
-        'live': 'windows',
-        'username': 'user',
     }.get(name, name)
 
 

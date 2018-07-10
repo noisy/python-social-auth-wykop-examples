@@ -4,11 +4,11 @@ SOCIAL_AUTH_LOGIN_URL = '/'
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/done/'
 SOCIAL_AUTH_USER_MODEL = 'example.models.User'
 
-SOCIAL_AUTH_STEEMCONNECT_KEY = 'myproject.app'
-SOCIAL_AUTH_STEEMCONNECT_DEFAULT_SCOPE = ['vote', 'comment']
+SOCIAL_AUTH_WYKOP_KEY = ''
+SOCIAL_AUTH_WYKOP_SECRET = ''
 
 SOCIAL_AUTH_AUTHENTICATION_BACKENDS = (
-    'steemconnect.backends.SteemConnectOAuth2',
+    'social_auth_wykop.backends.WykopAPIv1',
     'social_core.backends.facebook.FacebookOAuth2',
     'social_core.backends.github.GithubOAuth2',
     'social_core.backends.twitter.TwitterOAuth',

@@ -43,12 +43,12 @@ input::-moz-focus-inner {
     cursor: pointer;
 }
 
-.login-button.button-steem {
-    background: #4aa1f1;
+.login-button.button-wykop {
+    background: #4383af;
 }
 
-.login-button.button-steem:hover {
-    background: #1283ed;
+.login-button.button-wykop:hover {
+    background: #4383af;
 }
 
 .login-button.button-facebook {
@@ -110,4 +110,13 @@ text-align: center;
     right: 0;
     width: 1px;
     background: rgba(255, 255, 255, .3);
+}
+
+.icon.icon-wykop {
+    background: url("/static/img/wykop.png") no-repeat;
+    width: 20px !important;
+    height: 20px;
+    margin-left: 6px;
+    padding-right: 25px;
+    background-size: contain;
 }

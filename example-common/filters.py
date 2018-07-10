@@ -12,6 +12,7 @@ def backend_name(backend):
     name = backend.__name__
     name = name.replace('OAuth2', '')
     name = name.replace('OAuth', '')
+    name = name.replace('APIv1', '')
     # name = name.replace('OpenId', ' OpenId')
     # name = name.replace('Sandbox', '')
     # name = NAME_RE.sub(r'\1 Auth', name)
@@ -24,7 +25,7 @@ def backend_class(backend):
 
 def order_backends(backends):
     order = {
-        'steemconnect': 0,
+        'wykop': 0,
         'facebook': 1,
         'github': 2,
         'twitter': 3,
@@ -37,19 +38,9 @@ def order_backends(backends):
 
 def icon_name(name):
     return {
-        'steemconnect': 'steem',
-        'stackoverflow': 'stack-overflow',
         'google-oauth': 'google',
         'google-oauth2': 'google',
-        'google-openidconnect': 'google',
-        'yahoo-oauth': 'yahoo',
         'facebook-app': 'facebook',
-        'email': 'envelope',
-        'vimeo': 'vimeo-square',
-        'linkedin-oauth2': 'linkedin',
-        'vk-oauth2': 'vk',
-        'live': 'windows',
-        'username': 'user',
     }.get(name, name)
 
 

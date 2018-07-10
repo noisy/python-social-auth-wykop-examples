@@ -64,7 +64,7 @@ class DoneHandler(BaseHandler):
 
 class LogoutHandler(tornado.web.RequestHandler):
     def get(self):
-        self.request.redirect('/')
+        self.redirect('/')
 
 
 jinja2env = Environment(

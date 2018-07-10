@@ -106,7 +106,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'example.wsgi.application'
 
 AUTHENTICATION_BACKENDS = (
-    'steemconnect.backends.SteemConnectOAuth2',
+    'social_auth_wykop.backends.WykopAPIv1',
     'social_core.backends.facebook.FacebookOAuth2',
     'social_core.backends.github.GithubOAuth2',
     'social_core.backends.twitter.TwitterOAuth',
@@ -128,8 +128,8 @@ SOCIAL_AUTH_EMAIL_VALIDATION_FUNCTION = 'app.mail.send_validation'
 SOCIAL_AUTH_EMAIL_VALIDATION_URL = '/email-sent/'
 SOCIAL_AUTH_USERNAME_FORM_HTML = 'username_signup.html'
 
-SOCIAL_AUTH_STEEMCONNECT_KEY = 'myproject.app'
-SOCIAL_AUTH_STEEMCONNECT_DEFAULT_SCOPE = ['vote', 'comment']
+SOCIAL_AUTH_WYKOP_KEY = ''
+SOCIAL_AUTH_WYKOP_SECRET = ''
 
 SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.social_auth.social_details',
